@@ -194,48 +194,6 @@ class RAGSystem:
             raise RuntimeError("Failed to load retriever")
         
         # Retrieve relevant passages
-        passages = self.retriever.search(question, k=top_k)
-        
-        # Format context
-        context = self.retriever.format_context(passages)
-        
-        # Generate answer
-        max_new_tokens = self.config.get("max_new_tokens", 256)
-        answer = self.generator.generate_answer(context, question, max_new_tokens=max_new_tokens)
-        
-        # Process tags
-        used_general_knowledge = False
-        if "[GENERAL_KNOWLEDGE]" in answer:
-            used_general_knowledge = True
-            answer = answer.replace("[GENERAL_KNOWLEDGE]", "").strip()
-        elif "[USED_CONTEXT]" in answer:
-            answer = answer.replace("[USED_CONTEXT]", "").strip()
-            
-        # Prepare response
-        response = {
-            "question": question,
-            "answer": answer,
-            "sources": [],
-            "used_passages": passages
-        }
-        
-        # Only include sources if general knowledge was NOT used
-        if not used_general_knowledge:
-            response["sources"] = [
-                {
-                    "title": p.get('title', ''),
-                    "source_url": p.get('source_url', ''),
-                    "score": p.get('score', 0)
-                }
-                for p in passages
-            ]
-        
-        return response
-
-
-# Example usage
-if __name__ == "__main__":
-    # Example of how to use the RAGSystem
     rag_system = RAGSystem()
     
     # Sample documents
