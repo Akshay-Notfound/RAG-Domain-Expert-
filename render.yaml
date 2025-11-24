@@ -13,9 +13,8 @@ services:
   # Frontend Static Site
   - type: static
     name: rag-frontend
-    env: static
     buildCommand: cd src/rag_system/frontend && npm install && npm run build
-    publishDir: src/rag_system/frontend/dist
+    staticPublishPath: src/rag_system/frontend/dist
     routes:
       - type: rewrite
         source: /*
