@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\Projects for Final Year testing\RAG\src\rag_system\data\wikipedia_fetcher.py", line 6, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'

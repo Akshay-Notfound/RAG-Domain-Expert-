@@ -1,0 +1,86 @@
+========================================
+RAG SYSTEM - COMPLETE SETUP INSTRUCTIONS
+========================================
+
+Congratulations! You've built a complete Retrieval-Augmented Generation (RAG) system with a modern React chat interface.
+
+SYSTEM FEATURES:
+==============
+- Domain-focused question answering (pre-loaded with historical data)
+- Real-time chat interface similar to ChatGPT/Gemini
+- Source citations for all answers
+- RESTful API backend
+- Responsive web design
+- Docker containerization support
+
+HOW TO RUN THE SYSTEM:
+=====================
+
+OPTION 1: Quick Start (Windows)
+-------------------------------
+Double-click on "run_full_system.bat" to automatically:
+1. Install all Python dependencies
+2. Install all frontend dependencies
+3. Start the backend API server
+4. Start the React frontend
+5. Open your browser to the chat interface
+
+OPTION 2: Quick Start (Mac/Linux)
+---------------------------------
+1. Make the script executable:
+   chmod +x run_full_system.sh
+
+2. Run the script:
+   ./run_full_system.sh
+
+OPTION 3: Manual Setup
+----------------------
+1. Install Python dependencies:
+   pip install -r requirements.txt
+
+2. Install frontend dependencies:
+   cd src/rag_system/frontend
+   npm install
+
+3. Initialize with sample data (from root directory):
+   cd ../../..
+   python init_rag.py
+
+4. Start the backend API:
+   cd src/rag_system/api
+   python main.py
+
+5. Start the frontend (in a new terminal):
+   cd src/rag_system/frontend
+   npm run start
+
+6. Access the chat interface at:
+   http://localhost:3000
+
+OPTION 4: Docker Deployment
+---------------------------
+docker-compose up --build
+
+Access at: http://localhost:8000
+
+ACCESSING THE CHAT INTERFACE:
+============================
+After starting the system, open your browser and go to:
+- http://localhost:3000 (if running frontend separately)
+- http://localhost:8000 (if using Docker or combined setup)
+
+Try these example questions:
+- "Who led the Salt Satyagraha in 1930 and why was it important?"
+- "What was the purpose of the Salt March?"
+- "When did India gain independence?"
+
+TECHNICAL DETAILS:
+=================
+Backend: Python 3.10+ with FastAPI
+Frontend: React 18 with Vite
+ML Models: sentence-transformers, Hugging Face Transformers
+Vector DB: FAISS
+API Port: 8000
+Frontend Port: 3000
+
+For detailed instructions, see STARTUP_GUIDE.md

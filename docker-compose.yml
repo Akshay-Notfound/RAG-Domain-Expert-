@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  rag-system:
+    build:
+      context: .
+      dockerfile: Dockerfile.full
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./indexes:/app/indexes
+    environment:
+      - PYTHONPATH=/app
+      - NODE_ENV=production

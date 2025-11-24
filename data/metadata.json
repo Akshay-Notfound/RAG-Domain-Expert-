@@ -1,0 +1,14 @@
+[
+  {
+    "id": "doc_1_0",
+    "document_id": "doc_1",
+    "title": "Gandhi's Salt March",
+    "source_url": "https://example.com/history/india/salt-march"
+  },
+  {
+    "id": "doc_2_0",
+    "document_id": "doc_2",
+    "title": "The Salt Act of 1882",
+    "source_url": "https://example.com/history/india/salt-act"
+  }
+]

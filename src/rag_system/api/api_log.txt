@@ -1,0 +1,36 @@
+d:\Projects for Final Year testing\RAG\.venv\lib\site-packages\google\api_core\_python_version_support.py:266: FutureWarning: You are using a Python version (3.10.11) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+INFO:     Started server process [27688]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+d:\Projects for Final Year testing\RAG\.venv\lib\site-packages\huggingface_hub\file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Initializing RAG system (this may take some time)...
+Successfully initialized Google Gemini model.
+Found Wikipedia API credentials, attempting to authenticate...
+Authentication failed: 403 - Please set a user-agent and respect our robot policy https://w.wiki/4wJS. See also T400119.
+
+Loading existing index...
+Simple retriever loaded successfully
+INFO:     127.0.0.1:50727 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62848 - "OPTIONS /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62848 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53249 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51080 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49213 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59703 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50955 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60924 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54513 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65071 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52265 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62348 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63704 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51731 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60927 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62466 - "OPTIONS /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62466 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62466 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55096 - "POST /query HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54184 - "POST /query HTTP/1.1" 200 OK

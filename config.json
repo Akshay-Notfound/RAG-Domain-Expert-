@@ -1,0 +1,15 @@
+{
+  "embedding_model": "all-MiniLM-L6-v2",
+  "generation_model": "google/flan-t5-base",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "default_top_k": 5,
+  "max_new_tokens": 256,
+  "api_host": "0.0.0.0",
+  "api_port": 8001,
+  "wikipedia_api": {
+    "client_id": "dd99eb1d2e7be46f8c82fef885ec3fc0",
+    "client_secret": "04052cb7b28a35fc4b50beb737484703d95f9cf4"
+  },
+  "google_api_key": "AIzaSyCAa1C2dvFxtRWSR_jG13vqO_1uvLXXno4"
+}

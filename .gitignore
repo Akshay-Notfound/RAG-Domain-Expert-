@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments - CRITICAL: Exclude these!
+.venv/
+.venv310/
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+indexes/
+*.index
+
+# Large model files
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Logs
+*.log
+git_upload_log.txt
+
+# Scripts with tokens
+push_to_github.bat
+upload_to_github.ps1
+
+# OpenMemory - IDE specific
+.qoder/rules/openmemory.md
